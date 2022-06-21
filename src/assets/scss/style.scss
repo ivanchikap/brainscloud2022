@@ -10,6 +10,7 @@ body {
     font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";;
     font-size: 1.4rem;
     color: $white;
+    line-height: 1.5;
 }
 *,
 *::before,
@@ -18,7 +19,19 @@ body {
 }
 
 /* Blocks */
+@import "blocks/page";
+@import "blocks/embed";
 @import "blocks/header";
+@import "blocks/search";
+@import "blocks/subnav";
+@import "blocks/nav";
 @import "blocks/sidebar";
 @import "blocks/main";
 @import "blocks/container";
+@import "blocks/profile";
+@import "blocks/social";
+@import "blocks/btn";
+@import "blocks/stories";
+@import "blocks/add-post";
+@import "blocks/post";
+@import "blocks/pagination";
