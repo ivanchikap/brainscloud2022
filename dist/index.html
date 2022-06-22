@@ -12,9 +12,9 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="description" content="">
     
-    <title>BrainsCloud | Home</title>
+    <title>Home</title>
 </head>
-<body>
+<body class="no-scroll">
 
     <div class="page">
         <!-- Header -->
@@ -23,7 +23,7 @@
                 <nav class="nav">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a class="nav__link" href="#">Главная</a>
+                            <a class="nav__link" href="index.html">Главная</a>
                         </li>
                         <!--/nav__item-->
                         <li class="nav__item">
@@ -43,11 +43,11 @@
                         </li>
                         <!--/nav__item-->
                         <li class="nav__item">
-                            <a class="nav__link" href="#">Обо мне</a>
+                            <a class="nav__link" href="text.html">Обо мне</a>
                         </li>
                         <!--/nav__item-->
                         <li class="nav__item">
-                            <a class="nav__link" href="#">Реклама</a>
+                            <a class="nav__link" href="text.html">Реклама</a>
                         </li>
                         <!--/nav__item-->
                     </ul>
@@ -58,14 +58,14 @@
                 <nav class="nav">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a class="nav__link" href="#">Профиль</a>
+                            <a class="nav__link" href="profile.html">Профиль</a>
                         </li>
                         <li class="nav__item">
                             <a class="nav__link" href="#">Выйти</a>
                         </li>
                     </ul>
                 </nav>
-                <form class="search" action="/" method="post">
+                <form class="search" action="search.html" method="get">
                     <input class="search__input" type="text" placeholder="Поиск по блогу">
                 </form>
             </div>
@@ -111,7 +111,7 @@
             </div>
             <!--/sidebar__content-->
             <div class="sidebar__footer">
-                <a class="btn btn--red" href="#">Мои работы</a>
+                <a class="btn btn--red" href="works.html">Мои работы</a>
                 <button class="btn btn--blue" type="button">Написать мне</button>
             </div>
             <!--/sidebar__footer-->
@@ -165,7 +165,7 @@
                 
                 <div class="post">
                     <div class="post__content">
-                        <p class="post__text">
+                        <p class="post__description">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.
                         </p>
                     </div>
@@ -180,16 +180,16 @@
                 <!--/post-->
                 
                 <article class="post">
-                    <div class="post__header">
-                        <a href="#">
+                    <div class="post__header post__header--preview">
+                        <a href="post.html">
                             <img src="assets/images/post-2.jpg" alt="Как писать код быстро и безболезненно?">
                         </a>
                     </div>
                     <div class="post__content">
                         <h2 class="post__title">
-                            <a class="post__preview" href="#">Как писать код быстро и безболезненно?</a>
+                            <a class="post__preview" href="post.html">Как писать код быстро и безболезненно?</a>
                         </h2>
-                        <p class="post__text">
+                        <p class="post__description">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.
                         </p>
                     </div>
@@ -203,7 +203,7 @@
                             </li>
                         </ul>
                 
-                        <a href="#" class="post__read">читать</a>
+                        <a href="post.html" class="post__read">читать</a>
                     </div>
                 </article>
                 <!--/post-->
@@ -229,22 +229,22 @@
                             </li>
                         </ul>
                 
-                        <a href="#" class="post__read">оставить коментарий</a>
+                        <a href="post.html" class="post__read">оставить коментарий</a>
                     </div>
                 </article>
                 <!--/post-->
                 
                 <article class="post">
-                    <div class="post__header">
-                        <a href="#">
+                    <div class="post__header post__header--preview">
+                        <a href="post.html">
                             <img src="assets/images/post-3.jpg" alt="Как я сходил на FrontEnd Conf 2021">
                         </a>
                     </div>
                     <div class="post__content">
                         <h2 class="post__title">
-                            <a class="post__preview" href="#">Как я сходил на FrontEnd Conf 2021</a>
+                            <a class="post__preview" href="post.html">Как я сходил на FrontEnd Conf 2021</a>
                         </h2>
-                        <p class="post__text">
+                        <p class="post__description">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.
                         </p>
                     </div>
@@ -258,7 +258,7 @@
                             </li>
                         </ul>
                 
-                        <a href="#" class="post__read">читать</a>
+                        <a href="post.html" class="post__read">читать</a>
                     </div>
                 </article>
                 <!--/post-->
@@ -297,6 +297,9 @@
         <footer>Footer</footer>
     </div>
 
+    <div class="modal">
+    
+    </div>
     <script src="assets/js/app.js"></script>
 </body>
 </html>

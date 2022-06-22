@@ -1,0 +1,44 @@
+---
+layout: default
+title: profile
+---
+
+<h1 class="page__title">Профиль</h1>
+
+<form action="/" class="form">
+
+    <div class="cabinet">
+        <div class="cabinet__form">
+            <div class="form__group form__group--md">
+                <input type="text" class="form__control" placeholder="Ваше имя" value="Дмитрий Ктото">
+                <span class="form__line"></span>
+            </div>
+
+            <div class="form__group form__group--md">
+                <input type="email" class="form__control" placeholder="Ваше e-mail" value="alex.promo@mail.com">
+                <span class="form__line"></span>
+            </div>
+
+            <div class="form__group form__group--md">
+                <input type="password" class="form__control" placeholder="Новый пароль">
+                <span class="form__line"></span>
+            </div>
+
+            <div class="form__group form__group--md">
+                <input type="password" class="form__control" placeholder="Подтвердите пароль">
+                <span class="form__line"></span>
+            </div>
+        </div>
+        <!--/profile__form-->
+        <div class="cabinet__avatar">
+            <img src="assets/images/avatar.jpg" alt="аватар человека">
+            <label class="cabinet__file">
+                <input type="file">
+                <span>выбрать аватар</span>
+            </label>
+        </div>
+        <!--/profile__avatar-->
+    </div>  
+
+    <button class="btn btn--blue btn--rounded btn--sm" type="submit">Сохранить</button>
+</form>

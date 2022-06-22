@@ -11,12 +11,26 @@ body {
     font-size: 1.4rem;
     color: $white;
     line-height: 1.5;
+
+    &.no-scroll {
+        overflow: hidden;
+    }
 }
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
+
+a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
 
 /* Blocks */
 @import "blocks/page";
@@ -35,3 +49,10 @@ body {
 @import "blocks/add-post";
 @import "blocks/post";
 @import "blocks/pagination";
+@import "blocks/related";
+@import "blocks/comments";
+@import "blocks/form";
+@import "blocks/work";
+@import "blocks/tags";
+@import "blocks/cabinet";
+@import "blocks/modal";
