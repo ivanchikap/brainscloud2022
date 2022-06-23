@@ -9,6 +9,7 @@
   border-radius: 0 0 5px 5px;
   box-shadow: 0 6px 8px rgba($black, 0.2);
 
+
   @include breakpoint($tablet) {
     position: static;
     width: 100%;
