@@ -3,6 +3,11 @@
   justify-content: center;
   margin-top: 8rem;
 
+  @include breakpoint($mobile) {
+    margin-top: 5rem;
+  }
+
+
   &__item {
     margin: 0 .5rem;
   }

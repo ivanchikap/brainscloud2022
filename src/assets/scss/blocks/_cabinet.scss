@@ -1,13 +1,26 @@
 .cabinet {
   display: flex;
 
+  @include breakpoint($mobile) {
+    flex-direction: column;
+  }
+
   &__form {
     width: 34rem;
+
+    @include breakpoint($mobile) {
+      order: 2;
+    }
   }
 
   &__avatar {
     flex-grow: 1;
     padding-left: 11rem;
+
+    @include breakpoint($mobile) {
+      padding-left: 0;
+      margin-bottom: 2rem;
+    }
 
     img {
       display: block;

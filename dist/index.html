@@ -14,7 +14,7 @@
     
     <title>Home</title>
 </head>
-<body class="no-scroll">
+<body>
 
     <div class="page">
         <!-- Header -->
@@ -52,6 +52,10 @@
                         <!--/nav__item-->
                     </ul>
                 </nav>
+        
+                <button class="burger" type="button">
+                    <span>Открыть навигацию</span>
+                </button>
             </div>
             <!--/header__left-->
             <div class="header__right">
@@ -80,8 +84,10 @@
             <div class="sidebar__content">
                 <div class="profile">
                     <img class="profile__avatar" src="https://via.placeholder.com/100" alt="zag">
-                    <div class="profile__name">Дмитрий Самборський</div>
-                    <p class="profile__prof">блог front-end разработки</p>
+                    <div class="profile__header">
+                        <div class="profile__name">Дмитрий Самбор</div>
+                        <p class="profile__prof">блог front-end разработки</p>
+                    </div>
         
                     <ul class="social">
                         <li class="social__item">
@@ -108,6 +114,47 @@
                     </div>
                 </div>
                 <!--/profile-->
+                <nav class="nav nav--mobile">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="index.html">Главная</a>
+                        </li>
+                        <!--/nav__item-->
+                        <li class="nav__item">
+                            <a class="nav__link has-subnav" href="#">Статьи</a>
+        
+                            <ul class="subnav">
+                                <li>
+                                    <a class="subnav__link" href="#">Создание сайтов</a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="#">Интернет-маркетинг</a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="#">Продвижение видео</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!--/nav__item-->
+                        <li class="nav__item">
+                            <a class="nav__link" href="text.html">Обо мне</a>
+                        </li>
+                        <!--/nav__item-->
+                        <li class="nav__item">
+                            <a class="nav__link" href="text.html">Реклама</a>
+                        </li>
+                        <!--/nav__item-->
+                        <li class="nav__item">
+                            <a class="nav__link" href="profile.html">Профиль</a>
+                        </li>
+                        <!--/nav__item-->
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Выйти</a>
+                        </li>
+                        <!--/nav__item-->
+                    </ul>
+                </nav>
+                <!--/nav--mobile-->
             </div>
             <!--/sidebar__content-->
             <div class="sidebar__footer">
@@ -156,7 +203,7 @@
                                 <input type="file" id="add-post-file">
                             </label>
                             <button class="add-post__send" type="submit">
-                                <img src="assets/images/send.svg" alt="send">
+                                Отправить
                             </button>
                         </div>
                     </form>
@@ -294,11 +341,11 @@
             </div>
         </main>
 
-        <footer>Footer</footer>
+        <footer></footer>
     </div>
 
     <div class="modal">
-    
+        <video class="modal__video" src="" poster="assets/images/poster.jpg"></video>
     </div>
     <script src="assets/js/app.js"></script>
 </body>

@@ -6,6 +6,10 @@
   border-radius: 5px;
   overflow: hidden;
 
+  @include breakpoint($mobile) {
+    flex-direction: column;
+  }
+
   &__preview {
     width: 31rem;
 
@@ -14,6 +18,11 @@
       height: 100%;
       object-fit: cover;
     }
+
+    @include breakpoint($mobile) {
+      width: 100%;
+      height: 15rem;
+    }
   }
 
   &__content {
@@ -21,6 +30,11 @@
     flex-direction: column;
     max-width: 29rem;
     padding: 2.5rem;
+
+    @include breakpoint($mobile) {
+      max-width: none;
+      padding: 1.5rem;
+    }
   }
 
   &__title {
@@ -28,6 +42,10 @@
     color: $white;
     font-weight: 500;
     margin-bottom: 3rem;
+
+    @include breakpoint($mobile) {
+      margin-bottom: 2rem;
+    }
   }
 
   &__description {
@@ -36,10 +54,19 @@
     font-size: 1.6rem;
     line-height: 1.68;
     font-weight: 300;
+
+    @include breakpoint($mobile) {
+      margin-bottom: 2rem;
+      font-size: 1.4rem;
+    }
   }
 
   &__footer {
     margin-top: auto;
     text-align: right;
+
+    @include breakpoint($mobile) {
+      text-align: left;
+    }
   }
 }

@@ -1,14 +1,29 @@
 .nav {
 
+  @include breakpoint($tablet) {
+    display: none;
+  }
+
+  &--mobile {
+    display: none;
+    @include breakpoint($tablet) {
+      display: block;
+      margin: 3rem 0;
+    }
+  }
+
   &__list {
     display: flex;
+
+    @include breakpoint($tablet) {
+      flex-direction: column;
+    }
   }
 
   &__item {
     position: relative;
 
     &:hover {
-
       .nav__link {
         background-color: $blue;
         text-decoration: none;
@@ -16,6 +31,15 @@
 
       > .subnav {
         display: block;
+      }
+    }
+
+    @include breakpoint($tablet) {
+      &:hover {
+
+        .nav__link {
+          background: none;
+        }
       }
     }
   }
@@ -48,6 +72,14 @@
         margin-top: 2px;
         right: 1.35rem;
       }
+    }
+
+    @include breakpoint($tablet) {
+      padding-left: 0;
+      padding-right: 0;
+
+      font-size: 1.6rem;
+      text-transform: capitalize;
     }
   }
 }
